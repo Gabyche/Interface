@@ -24,6 +24,24 @@
 </head>
 <body>
   <product>Loading...</product>
+  <script>
+    (var src = "http://192.168.1.21:3000/api/v1/products/1.json";
+      $.getJSON( src, {
+        id : "id" ,
+        name : "name" ,
+        description : "description" ,
+        base_of_measure : "base_of_measure"
+      } ,
+              function() {
+                Product.name = name;
+                Product.description = description;
+                Product.base_of_measure = base_of_measure;
+                Product.id = id;
+                return true;
+      })
+
+    );
+  </script>
   <script>System.import('app/app').then(null, console.error.bind(console));</script>
 </body>
 </html>

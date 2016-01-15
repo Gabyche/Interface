@@ -28,7 +28,7 @@ class Product {
 
   constructor() {
     this.id = 1;
-    this.name = 'Angular 2';
+    this.name = '';
     this.description = 'Super Framework'
   }
 }
