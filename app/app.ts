@@ -25,6 +25,7 @@ class Product {
   id: number;
   name: string;
   description: string;
+  base_of_measure : string;
 
   constructor() {
     this.id = 1;
